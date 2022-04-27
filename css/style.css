@@ -1,5 +1,5 @@
 /* ===============================GERAL=============================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +12,14 @@
     --branco: #fafafa;
     --cinza: #aaa;
     --cinza-50: #aaaaaa50;
+    --cinza-25: #aaaaaa25;
     --preto: #111;
     --preto-75: #11111175;
     --preto-93: #111111ee;
+    --vermelho: #d00;
     --black-to-transp-bot: linear-gradient(to bottom, #000000dd, #00000050, transparent);
+    --bg-previa: linear-gradient(to right, #000000dd, #00000050, transparent, #00000050);
+    --bg-container: linear-gradient(to top, #000000dd, #00000050, transparent);
 }
 /* ===============================GERAL=============================== */
 html {
@@ -25,7 +29,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-color:azure;
+    background-color:var(--preto);
 }
 /* ===============================HEADER=============================== */
 header {
@@ -99,6 +103,11 @@ header > .others > .search > input {
     height: 70%;
     border: none;
     background-color: transparent;
+    color: var(--branco);
+}
+
+header > .others > .search > input:focus-within {
+    border: none;
 }
 /* notificaçoes */
 .notification {
@@ -212,9 +221,156 @@ hr {
 .previa {
     width: 100%;
     height: 100vh;
-    background-color: var(--cinza);
     background-image: url(/DIO-Interface-Netflix/src/bg-stranger-things.jpg);
+}
+.container_previa{
+    width: 100%;
+    height: 100%;
+    background: var(--bg-previa);
     display: grid;
-    grid-template-rows: 25% 10% 28% 7% 20% 10%;
+    grid-template-rows: 90vh 20vh;
+}
+.informacoes_previa {
+    width: 100%;
+    height: 90vh;
+    background: var(--bg-container);
+    display: grid;
+    grid-template-rows: 30% 10% 40% 10%;
+    grid-template-columns: 40% 45% 15%;
+}
+.n_serie {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: var(--cinza);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+.n_serie>span{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.informacoes_previa>.descricao {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+}
+.descricao>.name_serie{
+    padding-left: 50px;
+}
+.descricao>.sinopse_serie{
+    padding-left: 50px;
+    color: var(--cinza);
+    font-size: 1.5rem;
+}
+.btns {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btns>.assistir{
+    width: 27%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btns>.assistir:hover{
+    background-color: var(--cinza);
+}
+.btns>.assistir>span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--preto);
+}
+.btns>.info_serie{
+    width: 40%;
+    height: 70%;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: var(--cinza-50);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btns>.info_serie:hover{
+    background-color: var(--cinza-25);
+}
+.btns>.info_serie>span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--branco);
+}
+.som_censura {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.som_censura>.som{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.som:hover{
+    background-color: var(--cinza-25);
+}
+.som>img{
+    width: 24px;
+}
+.som_censura>.censura{
+    width: 125px;
+    height: 45px;
+    border-left: 3px solid var(--cinza);
+    background-color: var(--preto-75);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.idade_censura {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--branco);
+    width: 42px;
+    height: 42px;
+    margin-left: 15px;
+    background-color: var(--vermelho);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minha_lista{
+    background: linear-gradient(to top, #000, #000000ee, #000000dd);
 }
 /* ===============================PREVIA=============================== */

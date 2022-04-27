@@ -55,3 +55,23 @@ function mostrar_notfication() {
     })
 }
 mostrar_notfication()
+function som () {
+    const on = document.querySelector(".on")
+    const off = document.querySelector(".off")
+    const som = document.querySelector(".som")
+
+    on.style.display = "block"
+    off.style.display = "none"
+
+    som.addEventListener("click", () => {
+        if (on.style.display == "block") {
+            on.style.display = "none"
+            off.style.display = "block"
+        } else {
+            on.style.display = "block"
+            off.style.display = "none"
+        }
+    })
+
+}
+som()
