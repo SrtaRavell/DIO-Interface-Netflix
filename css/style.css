@@ -18,8 +18,7 @@
     --preto-93: #111111ee;
     --vermelho: #d00;
     --black-to-transp-bot: linear-gradient(to bottom, #000000dd, #00000050, transparent);
-    --bg-previa: linear-gradient(to right, #000000dd, #00000050, transparent, #00000050);
-    --bg-container: linear-gradient(to top, #000000dd, #00000050, transparent);
+    --bg-previa: linear-gradient(to right, #000000dd, #00000050, transparent, #00000050), linear-gradient(to top, #000000dd, #00000050, transparent);
 }
 /* ===============================GERAL=============================== */
 html {
@@ -29,7 +28,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-color:var(--preto);
+    background-color:#000;
 }
 /* ===============================HEADER=============================== */
 header {
@@ -221,7 +220,7 @@ hr {
 .previa {
     width: 100%;
     height: 100vh;
-    background-image: url(/DIO-Interface-Netflix/src/bg-stranger-things.jpg);
+    background: var(--bg-previa), url(/DIO-Interface-Netflix/src/bg-stranger-things.jpg);
 }
 .container_previa{
     width: 100%;
@@ -233,7 +232,7 @@ hr {
 .informacoes_previa {
     width: 100%;
     height: 90vh;
-    background: var(--bg-container);
+    /* background: var(--bg-container); */
     display: grid;
     grid-template-rows: 30% 10% 40% 10%;
     grid-template-columns: 40% 45% 15%;
@@ -370,7 +369,7 @@ hr {
     justify-content: center;
     align-items: center;
 }
-.minha_lista{
-    background: linear-gradient(to top, #000, #000000ee, #000000dd);
+.assistindo{
+    /* background: linear-gradient(to top, #000, #000000ee, #000000dd); */
 }
 /* ===============================PREVIA=============================== */
