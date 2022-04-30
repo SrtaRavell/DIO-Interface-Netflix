@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/DIO-Interface-Netflix/src/n.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/n.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <title>Interface - Netflix</title>
 </head>
 
 <body>
     <header>
-        <a href="http://127.0.0.1:5500/DIO-Interface-Netflix/index.html" id="inicio" class="logo">
-            <img src="/DIO-Interface-Netflix/src/netflix.png">
+        <a href="http://127.0.0.1:5500/index.html" id="inicio" class="logo">
+            <img src="/src/netflix.png">
         </a>
         <nav>
             <a href="#">Início</a>
@@ -21,17 +23,27 @@
             <a href="#">Filmes</a>
             <a href="#">Bombando</a>
             <a href="#">Minha lista</a>
+            <div class="dropbox_nav">
+                <div>Navegar<img src="/src/seta.png" style="width: 10px; margin-left: 10px;"></div>
+                <div class="dropdown_nav">
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Bombando</a>
+                    <a href="#">Minha lista</a>
+                </div>
+            </div>
         </nav>
         <div class="others">
             <div class="search">
-                <img src="/DIO-Interface-Netflix/src/search.png" alt="search">
+                <img src="/src/search.png" alt="search">
                 <input type="text" class="input" placeholder="Títulos, gente e gêneros">
             </div>
             <div class="notification">
-                <img src="/DIO-Interface-Netflix/src/bell.png" alt="notificações">
+                <img src="/src/bell.png" alt="notificações">
                 <div class="notification_options">
                     <div class="notification_opt">
-                        <img src="/DIO-Interface-Netflix/src/soon-netflix.png">
+                        <img src="/src/soon-netflix.png">
                         <div class="text_notification">
                             <div class="description">
                                 <b>Netflix</b> - o que vai rolar<br>
@@ -41,7 +53,7 @@
                         </div>
                     </div>
                     <div class="notification_opt">
-                        <img src="/DIO-Interface-Netflix/src/soon-netflix.png">
+                        <img src="/src/soon-netflix.png">
                         <div class="text_notification">
                             <div class="description">
                                 <b>Netflix</b> - o que vai rolar<br>
@@ -51,7 +63,7 @@
                         </div>
                     </div>
                     <div class="notification_opt">
-                        <img src="/DIO-Interface-Netflix/src/soon-netflix.png">
+                        <img src="/src/soon-netflix.png">
                         <div class="text_notification">
                             <div class="description">
                                 <b>Netflix</b> - o que vai rolar<br>
@@ -61,7 +73,7 @@
                         </div>
                     </div>
                     <div class="notification_opt">
-                        <img src="/DIO-Interface-Netflix/src/soon-netflix.png">
+                        <img src="/src/soon-netflix.png">
                         <div class="text_notification">
                             <div class="description">
                                 <b>Netflix</b> - o que vai rolar<br>
@@ -75,21 +87,20 @@
             <div class="perfil">
                 <div class="drop_perfil">
                     <div class="drop_btn">
-                        <img src="/DIO-Interface-Netflix/src/perfil-1.png" alt="Perfil selecionado">
-                        <img class="seta" src="/DIO-Interface-Netflix/src/seta.png"
-                            style="width: 10px; margin-left: 10px;"></img>
+                        <img src="/src/perfil-1.png" alt="Perfil selecionado">
+                        <img class="seta" src="/src/seta.png" style="width: 10px; margin-left: 10px;"></img>
                     </div>
                     <div class="drop_options">
                         <div class="option">
-                            <img src="/DIO-Interface-Netflix/src/perfil-1.png" alt="perfil">
+                            <img src="/src/perfil-1.png" alt="perfil">
                             <a href="" class="name_perfil" id="perfil_um">Perfil 1</a>
                         </div>
                         <div class="option">
-                            <img src="/DIO-Interface-Netflix/src/perfil-2.png" alt="perfil">
+                            <img src="/src/perfil-2.png" alt="perfil">
                             <a href="" class="name_perfil" id="perfil_dois">Perfil 2</a>
                         </div>
                         <div class="option">
-                            <img src="/DIO-Interface-Netflix/src/perfil-3.png" alt="perfil">
+                            <img src="/src/perfil-3.png" alt="perfil">
                             <a href="" class="name_perfil" id="perfil_tres">Perfil 3</a>
                         </div>
                         <div class="option">
@@ -123,12 +134,12 @@
             <div class="container_previa">
                 <div class="informacoes_previa">
                     <div class="n_serie">
-                        <img src="/DIO-Interface-Netflix/src/n.png" style="width: 50px;">
+                        <img src="/src/n.png">
                         <span>S É R I E</span>
                     </div>
                     <div class="descricao">
                         <div class="name_serie">
-                            <img src="/DIO-Interface-Netflix/src/stranger-things-verm.png" style="width: 400px;">
+                            <img src="/src/stranger-things-verm.png">
                         </div>
                         <p class="sinopse_serie">
                             Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são
@@ -137,36 +148,203 @@
                     </div>
                     <div class="btns">
                         <a href="#" class="assistir">
-                            <img src="/DIO-Interface-Netflix/src/play.png">
+                            <img src="/src/play.png">
                             <span>Assistir</span>
                         </a>
                         <a href="#" class="info_serie">
-                            <img src="/DIO-Interface-Netflix/src/info.png">
+                            <img src="/src/info.png">
                             <span>Mais informações</span>
                         </a>
                     </div>
                     <div class="som_censura">
-                        <div class="som">
-                            <img class="off" src="/DIO-Interface-Netflix/src/mudo.png">
-                            <img class="on" src="/DIO-Interface-Netflix/src/alto-falante.png">
-                        </div>
+                        <!-- <div class="som">
+                            <img class="off" src="/src/mudo.png">
+                            <img class="on" src="/src/alto-falante.png">
+                        </div> -->
                         <div class="censura">
                             <div class="idade_censura">16</div>
                         </div>
                     </div>
                 </div>
-                <div class="minha_lista">
-                    
+            </div>
+        </div>
+        <div class="minha_lista">
+            <div class="name_row">Minha lista</div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/src/catalogo/b-99.jpg" alt="Brooklyn nine-nine">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/dexter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/gilmore-girls.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hannibal.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/dragon_ball.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/kimetsu_no_yaiba.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/jujutsu_kaisen.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hunter-x-hunter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/Kakegurui.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/john-wick.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/lie-to-me.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/matrix.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/naruto.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/o-mentalista.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/spin-out.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/made-of-honor.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/Enola-Holmes.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/nao_olhe_para_cima.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/jumanji.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="assistindo"></div>
+        <div class="assistindo">
+            <div class="name_row">Assistindo</div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/src/catalogo/spin-out.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hunter-x-hunter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/o-mentalista.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/naruto.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/matrix.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/lie-to-me.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/b-99.jpg" alt="Brooklyn nine-nine">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/dexter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/gilmore-girls.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hannibal.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/john-wick.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="filmes">
+            <div class="name_row">Filmes</div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/src/catalogo/john-wick.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/made-of-honor.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/Enola-Holmes.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/nao_olhe_para_cima.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/jumanji.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/matrix.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="series">
+            <div class="name_row">Séries</div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/src/catalogo/lie-to-me.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/o-mentalista.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/spin-out.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/b-99.jpg" alt="Brooklyn nine-nine">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/dexter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/gilmore-girls.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hannibal.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="animes">
+            <div class="name_row">Animes</div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/src/catalogo/naruto.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/dragon_ball.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/kimetsu_no_yaiba.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/jujutsu_kaisen.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/hunter-x-hunter.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="/src/catalogo/Kakegurui.png" alt="">
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-
-    </footer>
-
-    <script src="/DIO-Interface-Netflix/js/mostrar.js"></script>
+    <script src="/js/mostrar.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
 
 </html>
